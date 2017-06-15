@@ -94,10 +94,16 @@ public class Interaction_Script1 : MonoBehaviour {
 			if (Lock_On_Object.GetComponent<Collider> ()) {
 				Lock_On_Object.GetComponent<Collider> ().enabled = false;
 			}
+			if (Lock_On_Object.GetComponent<Rigidbody> ()) {
+				Lock_On_Object.GetComponent<Rigidbody> ().isKinematic = true;
+			}
 		} else {
 			Target_Slot.DetachChildren ();
 			if (Lock_On_Object.GetComponent<Collider> ()) {
 				Lock_On_Object.GetComponent<Collider> ().enabled = true;
+			}
+			if (Lock_On_Object.GetComponent<Rigidbody> ()) {
+				Lock_On_Object.GetComponent<Rigidbody> ().isKinematic = false;
 			}
 			Lock_On_Object = null;
 		}
