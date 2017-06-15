@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityWSASolutionName>FYP-Hololens (Empty)</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\sword_000\Downloads\FYP-Hololens\Applications\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\sword_000\Downloads\FYP-Hololens\FYP-Hololens (Empty)\</UnityProjectDir>
+        <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: a4e53ce439752a2479ff69ff4da15c34
+timeCreated: 1497516846
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ambientLight1
+    100002: directionalLight1
+    100004: head_controller
+    100006: head_joint
+    100008: ikHandle1
+    100010: ikHandle2
+    100012: L_ankle
+    100014: L_ball
+    100016: L_foot_controller
+    100018: L_knee
+    100020: L_leg
+    100022: L_toe
+    100024: left
+    100026: master_control
+    100028: //RootNode
+    100030: Monomino_baby
+    100032: Monomino_compile
+    100034: R_ankle
+    100036: R_ball
+    100038: R_foot_controller
+    100040: R_knee
+    100042: R_leg
+    100044: R_toe
+    400000: ambientLight1
+    400002: directionalLight1
+    400004: head_controller
+    400006: head_joint
+    400008: ikHandle1
+    400010: ikHandle2
+    400012: L_ankle
+    400014: L_ball
+    400016: L_foot_controller
+    400018: L_knee
+    400020: L_leg
+    400022: L_toe
+    400024: left
+    400026: master_control
+    400028: //RootNode
+    400030: Monomino_baby
+    400032: Monomino_compile
+    400034: R_ankle
+    400036: R_ball
+    400038: R_foot_controller
+    400040: R_knee
+    400042: R_leg
+    400044: R_toe
+    4300000: Monomino_baby
+    7400000: Walk
+    7400002: Jump
+    9500000: //RootNode
+    13700000: Monomino_baby
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ambientLight1
+        weight: 1
+      - path: directionalLight1
+        weight: 1
+      - path: left
+        weight: 1
+      - path: Monomino_compile
+        weight: 1
+      - path: Monomino_compile/master_control
+        weight: 1
+      - path: Monomino_compile/master_control/head_controller
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee/L_ankle
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee/R_ankle
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: Monomino_compile/master_control/L_foot_controller
+        weight: 1
+      - path: Monomino_compile/master_control/L_foot_controller/ikHandle2
+        weight: 1
+      - path: Monomino_compile/master_control/R_foot_controller
+        weight: 1
+      - path: Monomino_compile/master_control/R_foot_controller/ikHandle1
+        weight: 1
+      - path: Monomino_compile/Monomino_baby
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ambientLight1
+        weight: 1
+      - path: directionalLight1
+        weight: 1
+      - path: left
+        weight: 1
+      - path: Monomino_compile
+        weight: 1
+      - path: Monomino_compile/master_control
+        weight: 1
+      - path: Monomino_compile/master_control/head_controller
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee/L_ankle
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee/L_ankle/L_ball
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/L_leg/L_knee/L_ankle/L_ball/L_toe
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee/R_ankle
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee/R_ankle/R_ball
+        weight: 1
+      - path: Monomino_compile/master_control/head_joint/R_leg/R_knee/R_ankle/R_ball/R_toe
+        weight: 1
+      - path: Monomino_compile/master_control/L_foot_controller
+        weight: 1
+      - path: Monomino_compile/master_control/L_foot_controller/ikHandle2
+        weight: 1
+      - path: Monomino_compile/master_control/R_foot_controller
+        weight: 1
+      - path: Monomino_compile/master_control/R_foot_controller/ikHandle1
+        weight: 1
+      - path: Monomino_compile/Monomino_baby
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

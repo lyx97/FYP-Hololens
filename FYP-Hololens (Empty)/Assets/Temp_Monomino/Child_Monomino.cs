@@ -53,14 +53,11 @@ public class Child_Monomino : MonoBehaviour {
 
 		if (Hand.Get_Collided_Object ()) {
 			Body.AddForce (Vector3.up * Climbing_Speed, ForceMode.Acceleration);
-			Debug.Log("Climbing");
 		}
 		else if (Feet.Get_Collided_Object () != null) {
 			Body.AddForce (this.transform.gameObject.transform.forward * Moving_Speed, ForceMode.Acceleration);
-			Debug.Log("Walking");
 			}
 		else {
-			Debug.Log("Falling");
 				//Falling
 				Vector3 Velocity = Body.velocity;
 				Velocity.x = Velocity.z = 0;
