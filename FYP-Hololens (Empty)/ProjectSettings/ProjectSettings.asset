@@ -509,7 +509,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: FYP-Hololens (Empty)
   metroPackageVersion: 
-  metroCertificatePath: C:\Users\sword_000\Downloads\FYP-Hololens\FYP-Hololens (Empty)\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany

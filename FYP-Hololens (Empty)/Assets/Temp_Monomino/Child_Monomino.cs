@@ -10,6 +10,8 @@ public class Child_Monomino : MonoBehaviour {
 	public Trigger_Sensor Hand;
 	[Tooltip("Maximum Falling Speed")]
 	public float kill_speed = -20;
+	[Tooltip("Animator ot control animation")]
+	public Animator animator_ = null;
 
 	public float Climbing_Speed = 1;
 	public float Moving_Speed = 1;
@@ -52,13 +54,18 @@ public class Child_Monomino : MonoBehaviour {
 
 
 		if (Hand.Get_Collided_Object ()) {
+			//Climbing/Jumping
+			animator_.SetTrigger ("Jumping");
 			Body.AddForce (Vector3.up * Climbing_Speed, ForceMode.Acceleration);
 		}
 		else if (Feet.Get_Collided_Object () != null) {
+			//Climbing/Jumping
+			animator_.SetTrigger ("Walking");
 			Body.AddForce (this.transform.gameObject.transform.forward * Moving_Speed, ForceMode.Acceleration);
 			}
 		else {
-				//Falling
+			//start of Falling?
+				animator_.SetTrigger ("Falling");
 				Vector3 Velocity = Body.velocity;
 				Velocity.x = Velocity.z = 0;
 				Body.velocity = Velocity;

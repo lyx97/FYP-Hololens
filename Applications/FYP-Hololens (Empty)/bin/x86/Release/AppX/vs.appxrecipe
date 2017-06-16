@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-14T08:21:21.167</Modified>
+      <Modified>2017-06-16T02:39:14.279</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\bin\x86\Release\FYP-Hololens %28Empty%29.exe">
       <PackagePath>entrypoint\FYP-Hololens %28Empty%29.exe</PackagePath>
-      <Modified>2017-06-14T08:20:36.742</Modified>
+      <Modified>2017-06-16T02:38:37.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2017-06-14T08:05:40.163</Modified>
+      <Modified>2017-06-16T02:34:31.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -555,11 +555,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2017-06-14T08:03:50.002</Modified>
+      <Modified>2017-06-16T02:33:11.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2017-06-14T08:03:46.717</Modified>
+      <Modified>2017-06-16T02:33:08.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -567,31 +567,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2017-06-14T08:04:34.263</Modified>
+      <Modified>2017-06-16T02:33:14.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2017-06-14T08:03:50.572</Modified>
+      <Modified>2017-06-16T02:33:11.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2017-06-14T08:04:23.493</Modified>
+      <Modified>2017-06-16T02:33:13.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2017-06-14T08:03:46.714</Modified>
+      <Modified>2017-06-16T02:33:08.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2017-06-14T08:04:23.493</Modified>
+      <Modified>2017-06-16T02:33:13.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2017-06-14T08:05:39.870</Modified>
+      <Modified>2017-06-16T02:34:31.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2017-06-14T08:05:39.874</Modified>
+      <Modified>2017-06-16T02:34:31.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -600,47 +600,47 @@
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-14T08:20:44.261</Modified>
+      <Modified>2017-06-16T02:38:39.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2017-06-14T08:21:05.766</Modified>
+      <Modified>2017-06-16T02:39:00.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2017-06-14T08:21:05.804</Modified>
+      <Modified>2017-06-16T02:39:00.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2017-06-14T08:21:05.947</Modified>
+      <Modified>2017-06-16T02:39:01.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2017-06-14T08:21:06.277</Modified>
+      <Modified>2017-06-16T02:39:01.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2017-06-14T08:21:06.331</Modified>
+      <Modified>2017-06-16T02:39:01.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2017-06-14T08:21:06.525</Modified>
+      <Modified>2017-06-16T02:39:01.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\UnityEngine.VR.dll">
       <PackagePath>UnityEngine.VR.dll</PackagePath>
-      <Modified>2017-06-14T08:21:06.582</Modified>
+      <Modified>2017-06-16T02:39:01.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2017-06-14T08:21:04.593</Modified>
+      <Modified>2017-06-16T02:38:59.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
-      <Modified>2017-06-14T08:21:04.616</Modified>
+      <Modified>2017-06-16T02:38:59.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sword_000\Downloads\FYP-Hololens\Applications\FYP-Hololens %28Empty%29\bin\x86\Release\Core\FYP-Hololens %28Empty%29.exe">
       <PackagePath>FYP-Hololens %28Empty%29.exe</PackagePath>
-      <Modified>2017-06-14T08:21:21.134</Modified>
+      <Modified>2017-06-16T02:39:14.265</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
