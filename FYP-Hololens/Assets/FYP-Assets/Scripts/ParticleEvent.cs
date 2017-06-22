@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class ParticleEvent : MonoBehaviour {
 
-	public ParticleSystem particleSystem;
+	public ParticleSystem particlePrefeb;
 	public bool AllowContinous = false;
 	ParticleSystem currentParticle;
 
 	// Use this for initialization
 	void Start () {
-		currentParticle = Instantiate(particleSystem, this.transform.position, particleSystem.gameObject.transform.rotation);
-		currentParticle.gameObject.transform.DetachChildren ();
+		currentParticle = Instantiate(particlePrefeb, particlePrefeb.transform.position, particlePrefeb.transform.rotation, gameObject.transform);
 	}
 	
 	// Update is called once per frame
@@ -19,8 +18,8 @@ public class ParticleEvent : MonoBehaviour {
 	}
 
 	void PlayParticle() {
-		//particleSystem.Emit (1);
-		if (currentParticle.isPlaying == false || AllowContinous) {
+        //currentParticle.gameObject.transform.position = particleSystem.gameObject.transform.position;
+        if (currentParticle.isPlaying == false || AllowContinous) {
 			currentParticle.Play();
 		}
 	}
