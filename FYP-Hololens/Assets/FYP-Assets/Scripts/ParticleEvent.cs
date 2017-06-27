@@ -10,7 +10,9 @@ public class ParticleEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		currentParticle = Instantiate(particlePrefeb, particlePrefeb.transform.position, particlePrefeb.transform.rotation, gameObject.transform);
+		//currentParticle = Instantiate(particlePrefeb, particlePrefeb.transform.position, particlePrefeb.transform.rotation, gameObject.transform);
+		currentParticle = Instantiate(particlePrefeb, transform.position, Quaternion.identity);
+		currentParticle.transform.parent = gameObject.transform;
 	}
 	
 	// Update is called once per frame
