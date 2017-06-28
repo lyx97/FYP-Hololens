@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536d77487c427cd47b7a7066f549506e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particlePrefeb: {fileID: 198875280594414890, guid: cd9a1217cb2dbcd4f9d1358c4417b451,
+  particlePrefeb: {fileID: 198260620418199012, guid: b101e8d25716f79408d3343acd9726e7,
     type: 2}
   AllowContinous: 1
 --- !u!95 &326277314
@@ -3330,6 +3330,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114527115748138362, guid: e97982d2ba628854789ddc4136f77c90,
+        type: 2}
+      propertyPath: particlePrefeb
+      value: 
+      objectReference: {fileID: 198260620418199012, guid: b101e8d25716f79408d3343acd9726e7,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e97982d2ba628854789ddc4136f77c90, type: 2}
   m_IsPrefabParent: 0

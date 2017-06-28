@@ -10,7 +10,7 @@ public class ParticleEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		currentParticle = Instantiate(particlePrefeb, transform.position, Quaternion.identity);
+		currentParticle = Instantiate(particlePrefeb);
 		currentParticle.transform.position = gameObject.transform.position;
 	}
 
