@@ -5,16 +5,26 @@ using UnityEngine;
 public class RunAnimations : MonoBehaviour {
 
 	ActivateBooth MotherBooth;
-	public Animator Animation;
+	public Animator actor;
 
 	// Use this for initialization
-	void Start () {
-		MotherBooth = (ActivateBooth)FindObjectOfType (typeof(ActivateBooth));
+	void Start ()
+	{
+		MotherBooth = (ActivateBooth)FindObjectOfType(typeof(ActivateBooth));
+		actor.SetTrigger("idle");
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		bool Active = MotherBooth.GetCollisionCheck();
-		Animation.SetBool("close to booth", Active);
+	void Update ()
+	{
+		if (MotherBooth.GetCollisionCheck())
+		{
+			Time.timeScale = 1;
+			actor.SetTrigger("jump");
+		}
+		else
+		{
+			Time.timeScale = 0.2f;
+		}
 	}
 }
