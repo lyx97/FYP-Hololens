@@ -7,3 +7,5 @@ Dangle: 90 - 140
 Climb: 150 - 210
 
 Idle: 220 - 300 
+
+Climb back: 330 - 400
