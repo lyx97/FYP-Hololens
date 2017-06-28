@@ -8,15 +8,15 @@ public class ActivateBooth : MonoBehaviour {
 
 	bool CollisionCheck = true;
 
-	public bool GetCollisionCheck(){
+	public bool GetCollisionCheck()
+	{
 		return CollisionCheck;
 	}
 
 	// Use this for initialization
 	void Start () 
 	{
-		booth.SetActive (true);
-
+		booth.SetActive(true);
 	}
 
 	bool CheckCamera(Collider collider)
@@ -30,25 +30,26 @@ public class ActivateBooth : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider)
 	{
-		if (CheckCamera (collider)) {
-			booth.SetActive (true);
+		if (CheckCamera(collider))
+		{
+			Debug.Log("TRUE");
+			CollisionCheck = true;
 		}
-		CollisionCheck = true;
-		//changeAnimation.SetBool("close to booth", true);
 	}
 
 	void OnTriggerExit(Collider collider)
 	{
-		if (CheckCamera (collider)) {
-			booth.SetActive (true);
+		if (CheckCamera(collider))
+		{
+			Debug.Log("FALSE");
+			CollisionCheck = false;
 		}
-		CollisionCheck = false;
-		//changeAnimation.SetBool("close to booth", false);
 	}
 
 	void OnTriggerStay(Collider collider)
 	{
-		if (collider.transform.gameObject.tag != "monomino") {
+		if (collider.transform.gameObject.tag != "monomino") 
+		{
 			//booth.transform.Rotate (Vector3.up * Time.deltaTime * 100);
 			//Debug.Log (collider.transform.gameObject.name);
 		}

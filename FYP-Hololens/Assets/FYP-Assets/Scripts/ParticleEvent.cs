@@ -10,18 +10,13 @@ public class ParticleEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//currentParticle = Instantiate(particlePrefeb, particlePrefeb.transform.position, particlePrefeb.transform.rotation, gameObject.transform);
 		currentParticle = Instantiate(particlePrefeb, transform.position, Quaternion.identity);
-		currentParticle.transform.parent = gameObject.transform;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+		currentParticle.transform.position = gameObject.transform.position;
 	}
 
 	void PlayParticle() {
-        //currentParticle.gameObject.transform.position = particleSystem.gameObject.transform.position;
         if (currentParticle.isPlaying == false || AllowContinous) {
+			currentParticle.transform.position = gameObject.transform.position;
 			currentParticle.Play();
 		}
 	}
