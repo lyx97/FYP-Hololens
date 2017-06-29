@@ -32,7 +32,6 @@ public class ActivateBooth : MonoBehaviour {
 	{
 		if (CheckCamera(collider))
 		{
-			Debug.Log("TRUE");
 			CollisionCheck = true;
 		}
 	}
@@ -41,7 +40,6 @@ public class ActivateBooth : MonoBehaviour {
 	{
 		if (CheckCamera(collider))
 		{
-			Debug.Log("FALSE");
 			CollisionCheck = false;
 		}
 	}

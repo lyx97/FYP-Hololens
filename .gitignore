@@ -26,6 +26,9 @@ ExportedObj/
 *.bin
 *.info
 
+FYP-Hololens/Library/metadata
+FYP-Hololens/Temp
+
 # Unity3D generated meta files
 *.pidb.meta
 

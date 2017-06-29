@@ -11,7 +11,7 @@ public class RunAnimations : MonoBehaviour {
 	void Start ()
 	{
 		MotherBooth = (ActivateBooth)FindObjectOfType(typeof(ActivateBooth));
-		actor.SetTrigger("idle");
+		actor.SetTrigger("jump");
 	}
 	
 	// Update is called once per frame
@@ -20,7 +20,6 @@ public class RunAnimations : MonoBehaviour {
 		if (MotherBooth.GetCollisionCheck())
 		{
 			Time.timeScale = 1;
-			actor.SetTrigger("jump");
 		}
 		else
 		{

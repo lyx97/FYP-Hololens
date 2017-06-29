@@ -2,22 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleEvent : MonoBehaviour {
+public class ParticleEvent : MonoBehaviour
+{
 
-	public ParticleSystem particlePrefeb;
+	public ParticleSystem[] particleArray;
 	public bool AllowContinous = false;
-	ParticleSystem currentParticle;
+	ParticleSystem[] currentParticle;
 
 	// Use this for initialization
-	void Start () {
-		currentParticle = Instantiate(particlePrefeb);
-		currentParticle.transform.position = gameObject.transform.position;
+	void Start ()
+	{
+		currentParticle = new ParticleSystem[particleArray.Length];
+		for (int i = 0; i < particleArray.Length; ++i)
+		{
+			currentParticle[i] = Instantiate(particleArray[i]);
+		}
 	}
 
-	void PlayParticle() {
-        if (currentParticle.isPlaying == false || AllowContinous) {
-			currentParticle.transform.position = gameObject.transform.position;
-			currentParticle.Play();
+	void PlayParticle(int index)
+	{
+		if (!currentParticle[index].isPlaying || AllowContinous)
+		{
+			currentParticle[index].transform.position = gameObject.transform.position;
+			currentParticle[index].Play();
 		}
 	}
 }
