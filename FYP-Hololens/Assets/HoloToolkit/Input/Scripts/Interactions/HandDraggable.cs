@@ -62,6 +62,7 @@ namespace HoloToolkit.Unity.InputModule
         private float handRefDistance;
         private Vector3 objRefGrabPoint;
 
+		private Vector3 lastPosition;
         private Vector3 draggingPosition;
         private Quaternion draggingRotation;
 
@@ -113,6 +114,11 @@ namespace HoloToolkit.Unity.InputModule
             {
                 return;
             }
+
+			if (gameObject.GetComponent<Rigidbody>())
+			{
+				gameObject.GetComponent<Rigidbody>().useGravity = false;
+			}
 
             // Add self as a modal input handler, to get all inputs during the manipulation
             InputManager.Instance.PushModalInputHandler(gameObject);
@@ -204,7 +210,9 @@ namespace HoloToolkit.Unity.InputModule
             float distanceOffset = distanceRatio > 0 ? (distanceRatio - 1f) * DistanceScale : 0;
             float targetDistance = objRefDistance + distanceOffset;
 
-            draggingPosition = pivotPosition + (targetDirection * targetDistance);
+			lastPosition = gameObject.transform.position;
+
+			draggingPosition = pivotPosition + (targetDirection * targetDistance);
 
             if (RotationMode == RotationModeEnum.OrientTowardUser || RotationMode == RotationModeEnum.OrientTowardUserAndKeepUpright) 
             {
@@ -231,7 +239,7 @@ namespace HoloToolkit.Unity.InputModule
                 Quaternion upRotation = Quaternion.FromToRotation(HostTransform.up, Vector3.up);		
                 HostTransform.rotation = upRotation * HostTransform.rotation;		
             }
-        }
+		}
 
         /// <summary>
         /// Stops dragging the object.
@@ -243,8 +251,12 @@ namespace HoloToolkit.Unity.InputModule
                 return;
             }
 
-            // Remove self as a modal input handler
-            InputManager.Instance.PopModalInputHandler();
+			Debug.Log((gameObject.transform.position - lastPosition) * 750);
+			gameObject.GetComponent<Rigidbody>().AddForce((gameObject.transform.position - lastPosition) * 750);
+			gameObject.GetComponent<Rigidbody>().useGravity = true;
+
+			// Remove self as a modal input handler
+			InputManager.Instance.PopModalInputHandler();
 
             isDragging = false;
             currentInputSource = null;

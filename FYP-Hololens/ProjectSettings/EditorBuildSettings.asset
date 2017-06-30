@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TheVeryBeginning.unity
     guid: e69e5b60835480c43b9676ebd63baf04
+  - enabled: 0
+    path: Assets/Scenes/ArtistBegins.unity
+    guid: 3ddccff87bac7f744b65801d1efb3bb1
