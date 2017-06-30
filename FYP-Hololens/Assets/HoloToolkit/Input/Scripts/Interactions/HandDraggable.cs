@@ -115,13 +115,16 @@ namespace HoloToolkit.Unity.InputModule
                 return;
             }
 
-			if (gameObject.GetComponent<Rigidbody>())
+			if (!gameObject.GetComponent<Rigidbody>())
 			{
-				gameObject.GetComponent<Rigidbody>().useGravity = false;
+				gameObject.AddComponent<Rigidbody>();
+				gameObject.GetComponent<Rigidbody>().mass = 0.5f;
 			}
 
-            // Add self as a modal input handler, to get all inputs during the manipulation
-            InputManager.Instance.PushModalInputHandler(gameObject);
+			gameObject.GetComponent<Rigidbody>().useGravity = false;
+
+			// Add self as a modal input handler, to get all inputs during the manipulation
+			InputManager.Instance.PushModalInputHandler(gameObject);
 
             isDragging = true;
             //GazeCursor.Instance.SetState(GazeCursor.State.Move);
@@ -250,8 +253,7 @@ namespace HoloToolkit.Unity.InputModule
             {
                 return;
             }
-
-			Debug.Log((gameObject.transform.position - lastPosition) * 750);
+			
 			gameObject.GetComponent<Rigidbody>().AddForce((gameObject.transform.position - lastPosition) * 750);
 			gameObject.GetComponent<Rigidbody>().useGravity = true;
 

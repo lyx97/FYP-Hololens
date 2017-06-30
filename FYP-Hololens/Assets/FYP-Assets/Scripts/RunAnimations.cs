@@ -17,13 +17,13 @@ public class RunAnimations : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (MotherBooth.GetCollisionCheck())
-		{
-			Time.timeScale = 1;
-		}
-		else
-		{
-			Time.timeScale = 0.2f;
-		}
+		//if (MotherBooth.GetCollisionCheck())
+		//{
+		//	Time.timeScale = 1;
+		//}
+		//else
+		//{
+		//	Time.timeScale = 0.2f;
+		//}
 	}
 }
